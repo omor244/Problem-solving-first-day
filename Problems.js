@@ -39,7 +39,7 @@ return count
     
 }
 
-// console.log(Problem2("programmingeeE"))
+// console.log(Problem2("programminge"))
 
 
 const Problem3 = (input) => {
@@ -65,7 +65,7 @@ const Problem3 = (input) => {
     
 }
 
-// console.log(Problem3("madam"))
+// console.log(Problem3("madan"))
 
 
 const Problem4 = (input) => {
@@ -82,7 +82,7 @@ const Problem4 = (input) => {
     return largest;
 }
 
-// console.log(Problem4([5, 1, 9, 3])); 
+// console.log(Problem4([5, 1, 9, 3, 12])); 
 
 
 const Problem5 = (input) => {
@@ -100,7 +100,7 @@ const Problem5 = (input) => {
     return notsame;
 }
 
-// console.log(Problem5([1, 2, 2, 3, 4, 4]));
+console.log(Problem5([1, 2, 2, 3, 4, 4]));
 
 
 const Problem6 = (input) => {
@@ -132,4 +132,57 @@ const Problem7 = (input) => {
     
     return evenNumbers;
 }
-console.log(Problem7([1, 2, 3, 4, 5, 6]))
+// console.log(Problem7([1, 2, 3, 4, 5, 6]))
+
+
+const Problem8 = (input) => {
+    let result = "";
+
+    for (let i = 0; i < input.length; i++) {
+
+        if (i === 0 || input[i - 1] === " ") {
+            result += input[i].toUpperCase();
+        } else {
+            result += input[i];
+        }
+    }
+
+    return result;
+}
+
+
+// console.log(Problem8("hello world")); 
+
+
+const Problem9 = (num) => {
+    let result = 1;
+
+    for (let i = 1; i <= num; i++) {
+        result *= i; 
+    }
+
+    return result;
+}
+
+
+// console.log(Problem9(5));
+
+
+
+const Problem10 = () => {
+
+    for (let i = 1; i <= 20; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("Pingpong");
+        } else if (i % 3 === 0) {
+            console.log("Ping");
+        } else if (i % 5 === 0) {
+            console.log("Pong");
+        } else {
+            console.log(i);
+        }
+    }
+}
+
+// Problem10();
+
